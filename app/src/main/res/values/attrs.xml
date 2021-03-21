@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ConstrainedDragAndDropView">
+        <!-- attr name="layoutId"    format="reference" / -->
+    </declare-styleable>
+
+    <declare-styleable name="TrapezoidView">
+        <attr name="backgroundFillColor" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CircleProgressBarWithBitmapView">
+        <attr name="progressColor" format="color" />
+        <attr name="progressThickness" format="dimension" />
+    </declare-styleable>
+</resources>
