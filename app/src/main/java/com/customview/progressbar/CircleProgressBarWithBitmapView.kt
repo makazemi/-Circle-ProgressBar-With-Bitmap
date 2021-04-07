@@ -97,11 +97,10 @@ class CircleProgressBarWithBitmapView(context: Context, attributeSet: AttributeS
 
     private fun drawCircleProgress(value:Int){
         progressPath.reset()
-       // frontRect.set(centerX-radius-thickness, centerY-radius-thickness, centerX+radius+thickness,centerY+radius+thickness)
         circleProgressBoundRect.set(centerX-radius, centerY-radius, centerX+radius,centerY+radius)
         progressPath.arcTo(circleProgressBoundRect, 0f, value.toFloat())
         circleProgressBoundRect.inset(thickness, thickness)
-        progressPath.arcTo(circleProgressBoundRect, (0 + value).toFloat(), -value.toFloat())
+        progressPath.arcTo(circleProgressBoundRect,  value.toFloat(), -value.toFloat())
         progressPath.rLineTo(-thickness, 0f)
         invalidate()
     }
